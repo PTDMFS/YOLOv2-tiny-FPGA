@@ -1,0 +1,12 @@
+sudo vim /etc/systemd/system/pynq_yolo.service
+
+sudo systemctl stop pynq_yolo
+sudo systemctl disable pynq_yolo
+
+sudo systemctl enable pynq_yolo
+sudo systemctl start pynq_yolo
+
+sudo systemctl enable pynq_yolo.service
+sudo systemctl start pynq_yolo.service
+
+./darknet detect cfg/yolov2-tiny.cfg yolov2-tiny_skin.weights data/ISIC_0024306.jpg

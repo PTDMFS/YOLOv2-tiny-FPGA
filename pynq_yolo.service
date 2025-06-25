@@ -1,0 +1,14 @@
+[Unit]
+Description=PYNQ YOLOv2-tiny App
+After=network.target multi-user.target
+
+[Service]
+ExecStartPre=/bin/sleep 20
+ExecStart=/usr/bin/python3 /home/xilinx/jupyter_notebooks/yolo_ov5640_hdmi_test/yolov2_tiny.py
+WorkingDirectory=/home/xilinx/jupyter_notebooks/yolo_ov5640_hdmi_test
+User=root
+Environment=DISPLAY=:0
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+[Install]
+WantedBy=multi-user.target

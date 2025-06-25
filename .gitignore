@@ -1,0 +1,40 @@
+# Vivado-generated files and folders
+*.jou
+*.log
+*.str
+*.wdb
+*.ltx
+*.pb
+
+# Vivado build folders
+.cache/
+.hw/
+.ipcache/
+.sim/
+.runs/
+.xpr.cache/
+
+# Simulation outputs
+*.vcd
+*.wlf
+
+# Bitstreams and binaries
+*.bit
+*.bin
+*.elf
+*.mem
+
+# Project-level generated files
+*.webtalk/
+*.xpr.user
+*.sdk/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Backup and temp
+*~
+*.bak
+*.tmp
+*.swp
